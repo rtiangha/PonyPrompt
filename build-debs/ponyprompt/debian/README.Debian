@@ -30,8 +30,11 @@ PonyPrompt can be installed via binary package (.deb and .rpm provided via the [
 ### openSUSE
 `sudo zypper install fortune`
 
+
 3. Grab the `cowprompt-data` package from the [CowPrompt project page](https://github.com/rtiangha/CowPrompt/releases).
+
 4. Next, install the **PonyPrompt** and **cowprompt-data** packages.
+
 
 ### DEB-based Distributions (ex. Debian/Ubuntu, etc.)
 `sudo dpkg -i ponyprompt_<VERSION>.deb cowprompt-data_<VERSION>.deb`
@@ -48,13 +51,17 @@ and it will automatically fetch any missing dependencies.
 ### Other Distributions
 Ensure that `ponysay` and `fortune` are installed in your system (either through your distribution's package manager or by manually compiling it). Then, you can use the included `Makefile` to install/uninstall PonyPrompt, and the `Makefile` from the [CowPrompt](https://github.com/rtiangha/CowPrompt) project to install `cowprompt-data`.
 
+
 1. Edit the various Configuration Options in the `Makefile` to point to the proper paths in your file system.
+
 2. To install:
 - Install ponyprompt:        `make install` (using the PonyPrompt `Makefile`)
-- Install cowprompt-data:    `make install-cowprompt-data` (using the [CowPrompt project](https://github.com/rtiangha/CowPrompt)) `Makefile`
+- Install cowprompt-data:    `make install-cowprompt-data` (using the [CowPrompt project](https://github.com/rtiangha/CowPrompt) `Makefile`)
+
 3. To uninstall:
 - Unistall ponyprompt:        `make uninstall` (using the PonyPrompt `Makefile`)
-- Uninstall cowprompt-data:    `make uninstall-cowprompt-data` (using the [CowPrompt project](https://github.com/rtiangha/CowPrompt)) `Makefile`
+- Uninstall cowprompt-data:    `make uninstall-cowprompt-data` (using the [CowPrompt project](https://github.com/rtiangha/CowPrompt)) `Makefile`)
+
 
 Alternatively, copy the files in the `unix` directory of the PonyPrompt project page to their equivalent places in your distribution's file system.
 
