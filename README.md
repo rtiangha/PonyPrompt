@@ -50,11 +50,11 @@ Ensure that `ponysay` and `fortune` are installed in your system (either through
 
 1. Edit the various Configuration Options in the `Makefile` to point to the proper paths in your file system.
 2. To install:
-      Install ponyprompt:        `make install` (using the PonyPrompt `Makefile`)
-      Install cowprompt-data:    `make install-cowprompt-data` (using the [CowPrompt project](https://github.com/rtiangha/CowPrompt)) `Makefile`
+- Install ponyprompt:        `make install` (using the PonyPrompt `Makefile`)
+- Install cowprompt-data:    `make install-cowprompt-data` (using the [CowPrompt project](https://github.com/rtiangha/CowPrompt)) `Makefile`
 3. To uninstall:
-      Unistall ponyprompt:        `make uninstall` (using the PonyPrompt `Makefile`)
-      Uninstall cowprompt-data:    `make uninstall-cowprompt-data` (using the [CowPrompt project](https://github.com/rtiangha/CowPrompt)) `Makefile`
+- Unistall ponyprompt:        `make uninstall` (using the PonyPrompt `Makefile`)
+- Uninstall cowprompt-data:    `make uninstall-cowprompt-data` (using the [CowPrompt project](https://github.com/rtiangha/CowPrompt)) `Makefile`
 
 Alternatively, copy the files in the `unix` directory of the PonyPrompt project page to their equivalent places in your distribution's file system.
 
