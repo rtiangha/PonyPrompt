@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# ponyprompt is a wrapper program that invokes ponysay to display a prompt
+# to the screen pulled from the list of valid fortunes available from the
+# system.
+#
+# You may also use any of the standard ponysay command line options to change
+# the look of the pony. See the ponysay(6) man page for more information.
+#
+# ponyprompt requires the cowprompt-data package from https://github.com/rtiangha/CowPrompt
+# to be installed first.
+#
+# Change 'Oblique' to any valid installed fortune file (or its file path),
+# or delete the fortune option entirely to have ponysay pull a random fortune
+# message from all available fortune files in the system. For example, to use 
+# Edition 1 of the Oblique Strategies cards rather than the amalgam version, 
+# change the DECKNAME variable to:
+# 
+# DECKNAME=Oblique-ed1
+#
+# or if your fortune data set lives in a different directory than the default
+# (ex. /opt/fortunes), then enter the full file path like so:
+#
+# DECKNAME=/opt/fortunes/Oblique-ed1
+# 
+# To pull from all availablly installed fortune data files, leave DECKNAME blank:
+# 
+# DECKNAME=
+#
+
+DECKNAME=Oblique
+
+# The ponysay program takes command line options to modify the look of the pony.
+# If you wish to change how the pony looks, enter the options below. See the
+# ponysay(6) man page for more information.
+
+ARGS="-b round"
+
+exec fortune $DECKNAME | ponysay $ARGS
+
+exit 1;
+

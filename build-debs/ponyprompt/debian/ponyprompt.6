@@ -1,0 +1,56 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" (C) Copyright 2020 Reg Tiangha <reg@reginaldtiangha.com>,
+.\"
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH PONYPROMPT 6 "October 30 2020"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+ponyprompt \- display a prompt to the terminal screen using ponies
+.SH SYNOPSIS
+.B ponyprompt
+.SH DESCRIPTION
+.B ponyprompt
+is a simple wrapper script that displays 
+.BR fortune (6) 
+messages via 
+.BR ponysay (6).
+.PP
+.SH OPTIONS
+.B ponyprompt
+does not take any options.
+.SH CONFIGURATION
+.B ponyprompt
+can be configured to display prompts differently using the standard
+.BR ponysay (6)
+commandline arguments by editing the wrapper script directly. See the file for options and examples (typically lives at /usr/bin/ponyprompt).
+.SH SPECIAL NOTES
+.B ponyprompt
+requires the data files included in the separate
+.B cowprompt-data
+package available at <https://github.com/rtiangha/CowPrompt>.
+.SH BUGS
+No known bugs.
+.SH REPORTING BUGS
+Report all bugs by submitting an issues ticket via the project's homepage at <https://github.com/rtiangha/PonyPrompt/issues>.
+.SH SEE ALSO
+.BR ponysay (6),
+.BR fortune (6).
+.br
+.SH AUTHOR
+Written by Reg Tiangha.
+.SH COPYRIGHT
+This manpage is copyright (C) 2020 Reg Tiangha.
+
