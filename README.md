@@ -48,6 +48,29 @@ and it will automatically fetch any missing dependencies.
 ### RPM-based Distributions (ex. Fedora/RHEL/CentOS/openSUSE, etc.)
 `sudo rpm -ivh ponyprompt-<VERSION>.noarch.rpm cowprompt-data-<VERSION>.noarch.rpm`
 
+### Void Linux
+
+You can use either these instructions, or the instructions in the **Other Distributions** section below.
+
+Install fortune-mod:
+
+`sudo xbps-install fortune-mod`
+
+To install CowPrompt-data, follow the **Void Linux** installation instructions on the [CowPrompt project page](https://github.com/rtiangha/CowPrompt) to set up a Void Linux development environment, build the CowPrompt and related packages.
+
+Copy the contents of `build-void` into `void-packages/srcpkgs`. For example, assuming that the `PonyPrompt` and `void-packages` project directories are on the same level:
+
+`cp -ar ../PonyPrompt/build-void/* srcpkgs/`
+
+Build the packages:
+
+`./xbps-src pkg PonyPrompt`
+
+Install the packages using `xi`
+
+`xi PonyPrompt CowPrompt-data`
+
+
 ### Other Distributions
 Ensure that `ponysay` and `fortune` are installed in your system (either through your distribution's package manager or by manually compiling it). Then, you can use the included `Makefile` to install/uninstall PonyPrompt, and the `Makefile` from the [CowPrompt](https://github.com/rtiangha/CowPrompt) project to install `cowprompt-data`.
 

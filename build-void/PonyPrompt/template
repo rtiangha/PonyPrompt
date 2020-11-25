@@ -1,0 +1,18 @@
+#Template file for 'PonyPrompt'
+pkgname=PonyPrompt
+version=1.0
+revision=1
+wrksrc="${pkgname}-${version}-${revision}"
+depends="fortune-mod CowPrompt-data"
+short_desc="Break through creative blocks with PonyPrompt"
+maintainer="Reg Tiangha <reg@reginaldtiangha.com>"
+license="Unlicense"
+homepage="https://github.com/rtiangha/PonyPrompt"
+distfiles="https://github.com/rtiangha/${pkgname}/archive/v${version}-${revision}.tar.gz"
+checksum=671fe0ed1b288181174cdb765809b442a4c605b33748ddd3b47d7bbc73449ff6
+
+do_install() {
+   vbin unix/usr/bin/ponyprompt
+   vman build-debs/ponyprompt/debian/ponyprompt.6
+}
+
