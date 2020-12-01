@@ -30,6 +30,12 @@ PonyPrompt can be installed via binary package (.deb and .rpm provided via the [
 ### openSUSE
 `sudo zypper install fortune`
 
+### Arch Linux
+`sudo pacman -S fortune-mod`
+
+### Void Linux
+`sudo xbps-install fortune-mod`
+
 
 3. Grab the `cowprompt-data` package from the [CowPrompt project page](https://github.com/rtiangha/CowPrompt/releases).
 
