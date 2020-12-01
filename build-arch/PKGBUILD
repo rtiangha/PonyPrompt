@@ -1,0 +1,20 @@
+# Maintainer: Reg Tiangha <reg@reginaldtiangha.com>
+
+pkgname=ponyprompt
+pkgver=1.0
+pkgrel=1
+pkgdesc="Break through creative blocks with PonyPrompt."
+arch=('any')
+url="https://github.com/rtiangha/PonyPrompt"
+license=('Unlicense')
+source=("https://github.com/rtiangha/${pkgname}/archive/v${pkgver}-${pkgrel}.tar.gz")
+sha256sums=('671fe0ed1b288181174cdb765809b442a4c605b33748ddd3b47d7bbc73449ff6')
+depends=('ponysay' 'fortune-mod' 'cowprompt-data')
+
+package() {
+    mkdir -p ${pkgdir}/usr/bin
+    mkdir -p ${pkgdir}/usr/share/man/man6
+    cd "${srcdir}/PonyPrompt-${pkgver}-${pkgrel}"
+    cp -R unix/usr/bin/ponyprompt ${pkgdir}/usr/bin/
+    cp -R unix/usr/share/man/man6/ponyprompt.6.gz ${pkgdir}/usr/share/man/man6/
+}

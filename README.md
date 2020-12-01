@@ -48,6 +48,10 @@ and it will automatically fetch any missing dependencies.
 ### RPM-based Distributions (ex. Fedora/RHEL/CentOS/openSUSE, etc.)
 `sudo rpm -ivh ponyprompt-<VERSION>.noarch.rpm cowprompt-data-<VERSION>.noarch.rpm`
 
+### Arch Linux
+
+`sudo pacman -U ponyprompt-<VERSION>-any.pkg.tar.zst cowprompt-data-<VERSION>-any.pkg.tar.zst`
+
 ### Void Linux
 
 You can use either these instructions, or the instructions in the **Other Distributions** section below.
